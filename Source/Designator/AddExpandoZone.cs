@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using Verse;
 
 namespace Merthsoft.ExpandoZone.Designator {
@@ -12,6 +13,7 @@ namespace Merthsoft.ExpandoZone.Designator {
             preset = StorageSettingsPreset.DefaultStockpile;
             defaultLabel = "Expando Zone";
             hotKey = null;
+            icon = ExpandoZoneMod.Icon_Expand;
         }
 
         protected override Verse.Zone MakeNewZone() {

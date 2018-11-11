@@ -24,7 +24,7 @@ namespace Merthsoft.ExpandoZone.Component {
                 var room = zone.Cells.First().GetRoom(zone.Map);
                 if (room == null || room.IsHuge) { continue; }
 
-                foreach (var cell in room.Cells.Where(c => !zone.ContainsCell(c))) {
+                foreach (var cell in room.Cells.Where(c => c.GetZone(zone.Map) == null)) {
                     zone.AddCell(cell);
                 }
             }

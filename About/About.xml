@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Expando Zone - dev</name>
-  <url></url>
+  <url>https://bitbucket.org/merthsoft/expandozone/</url>
   <author>Merthsoft and irunonhellfire</author>
   <targetVersion>1.0.0</targetVersion>
   <description>Can set a zone to automatically expand to fill its enclosing room.</description>
