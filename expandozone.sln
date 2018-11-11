@@ -11,6 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{34856F87
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merthsoft.ExpandoZone", "Source\Merthsoft.ExpandoZone.csproj", "{8FC72BF3-689B-44B5-B3E3-803BB8B1D776}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patches", "Patches", "{5C823EDB-5A97-46D9-A5D0-9D3EE2B0C6AF}"
+	ProjectSection(SolutionItems) = preProject
+		Patches\ExpandoDesignator.xml = Patches\ExpandoDesignator.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

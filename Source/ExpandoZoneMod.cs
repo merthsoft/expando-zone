@@ -9,6 +9,7 @@ using UnityEngine;
 using Verse;
 
 namespace Merthsoft.ExpandoZone {
+    [StaticConstructorOnStartup]
     public class ExpandoZoneMod : Mod {
         public static HarmonyInstance HarmonyInstance { get; set; }
 
