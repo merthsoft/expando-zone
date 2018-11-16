@@ -9,6 +9,8 @@ namespace Merthsoft.ExpandoZone.Zone {
     public class ExpandoStockPile : Zone_Stockpile {
         public bool ExpandoEnabled = true;
 
+        public ExpandoStockPile() : base() { }
+
         public ExpandoStockPile(StorageSettingsPreset preset, ZoneManager zoneManager)
             : base(preset, zoneManager) { }
 
@@ -32,5 +34,7 @@ namespace Merthsoft.ExpandoZone.Zone {
 
             Scribe_Values.Look(ref ExpandoEnabled, nameof(ExpandoEnabled), true);
         }
+
+
     }
 }

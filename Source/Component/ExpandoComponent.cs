@@ -20,7 +20,10 @@ namespace Merthsoft.ExpandoZone.Component {
             }
             tickNumber = TickRate;
 
-            foreach (var zone in Find.CurrentMap.zoneManager.AllZones.OfType<ExpandoStockPile>().Where(z => z.ExpandoEnabled)) {
+            var expandoZones = Find.CurrentMap.zoneManager.AllZones?.OfType<ExpandoStockPile>()?.Where(z => z.ExpandoEnabled);
+            if (expandoZones == null) { return; }
+
+            foreach (var zone in expandoZones) {
                 var room = zone.Cells.First().GetRoom(zone.Map);
                 if (room == null || room.IsHuge) { continue; }
 
