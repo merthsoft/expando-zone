@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Verse;
+using RimWorld;
 
 namespace Merthsoft.ExpandoZone {
     public static class Extensions {
@@ -13,9 +15,8 @@ namespace Merthsoft.ExpandoZone {
             fi.SetValue(obj, value);
         }
 
-        public static T GetFieldValue<T>(this object obj, string fieldName) {
-            return (T)obj.GetType().GetFieldValue(fieldName, obj);
-        }
+        public static T GetFieldValue<T>(this object obj, string fieldName) 
+            => (T)obj.GetType().GetFieldValue(fieldName, obj);
 
         public static object GetFieldValue(this Type t, string fieldName, object instance) {
             try {
@@ -24,5 +25,13 @@ namespace Merthsoft.ExpandoZone {
                 return null;
             }
         }
+
+        public static bool CanAddZone(this Map map, IntVec3 cell)
+            => map.zoneManager.ZoneAt(cell) != null
+                || !cell.InBounds(map)
+                || cell.Fogged(map)
+                || cell.InNoZoneEdgeArea(map) 
+                || map.thingGrid.ThingsAt(cell).Select(t => t.def).Any(d => !d.CanOverlapZones)
+            ? false : true;
     }
 }
