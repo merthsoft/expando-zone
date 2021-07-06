@@ -1,11 +1,9 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Verse;
 
-namespace Merthsoft.ExpandoZone.Zone {
+namespace Merthsoft.ExpandoZone.Zone
+{
     public class ExpandoStockPile : Zone_Stockpile {
         public bool ExpandoEnabled = true;
 

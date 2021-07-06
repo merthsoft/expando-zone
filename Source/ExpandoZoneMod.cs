@@ -1,24 +1,22 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace Merthsoft.ExpandoZone {
+namespace Merthsoft.ExpandoZone
+{
     [StaticConstructorOnStartup]
     public class ExpandoZoneMod : Mod {
-        public static HarmonyInstance HarmonyInstance { get; set; }
+        public static Harmony HarmonyInstance { get; set; }
 
         public static Texture2D Icon_Expand { get; private set; }
 
         static HashSet<Zone_Stockpile> expandoStockpileSet { get; set; }
 
         static ExpandoZoneMod() {
-            HarmonyInstance = HarmonyInstance.Create("Merthsoft.ExpandoZone");
+            HarmonyInstance = new Harmony("Merthsoft.ExpandoZone");
             HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
 
             LongEventHandler.ExecuteWhenFinished(() => {

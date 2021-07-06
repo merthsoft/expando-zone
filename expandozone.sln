@@ -1,20 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{34856F87-5729-4C63-B3E7-D84387819E0D}"
-	ProjectSection(SolutionItems) = preProject
-		About\About.xml = About\About.xml
-		About\Preview.png = About\Preview.png
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merthsoft.ExpandoZone", "Source\Merthsoft.ExpandoZone.csproj", "{8FC72BF3-689B-44B5-B3E3-803BB8B1D776}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patches", "Patches", "{5C823EDB-5A97-46D9-A5D0-9D3EE2B0C6AF}"
-	ProjectSection(SolutionItems) = preProject
-		Patches\ExpandoDesignator.xml = Patches\ExpandoDesignator.xml
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

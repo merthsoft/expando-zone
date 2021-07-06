@@ -1,12 +1,9 @@
 ﻿using Merthsoft.ExpandoZone.Zone;
-using RimWorld;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Verse;
 
-namespace Merthsoft.ExpandoZone.Component {
+namespace Merthsoft.ExpandoZone.Component
+{
     public class ExpandoComponent : GameComponent {
         public static int TickRate = 250;
         private int tickNumber = TickRate;

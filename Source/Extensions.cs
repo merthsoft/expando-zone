@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using Verse;
-using RimWorld;
 
-namespace Merthsoft.ExpandoZone {
+namespace Merthsoft.ExpandoZone
+{
     public static class Extensions {
         private static BindingFlags BINDING_FLAGS = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
 
