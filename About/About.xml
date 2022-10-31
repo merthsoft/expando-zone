@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Expando Zone - dev</name>
   <url>https://github.com/merthsoft/expando-zone</url>
-  <author>Merthsoft and irunonhellfire</author>
+  <author>merthsoft</author>
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
@@ -37,5 +37,5 @@
     <li>vendan.legodude17.bsd.update</li>
   </loadAfter>
   <packageId>Merthsoft.ExpandoZone</packageId>
-  <description>Can set a zone to automatically expand to fill its enclosing room.</description>
+  <description>Can set a zone to automatically expand to fill its enclosing room. idea by irunonhellfire.</description>
 </ModMetaData>
