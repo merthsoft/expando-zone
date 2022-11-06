@@ -5,21 +5,22 @@ using Verse;
 namespace Merthsoft.ExpandoZone.Component
 {
     public class ExpandoComponent : GameComponent {
-        public static int TickRate = 250;
+        public static int TickRate = 350;
         private int tickNumber = TickRate;
 
         public ExpandoComponent(Game g) {
         }
 
         public override void GameComponentTick() {
-            Map map = Find.CurrentMap;
-            if (map?.zoneManager?.AllZones == null) { return; }
-
-            if (tickNumber != 0) {
+            if (tickNumber != 0)
+            {
                 tickNumber--;
                 return;
             }
             tickNumber = TickRate;
+
+            Map map = Find.CurrentMap;
+            if (map?.zoneManager?.AllZones == null) { return; }
 
             var expandoZones = map.zoneManager.AllZones?.OfType<ExpandoStockPile>()?.Where(z => z.ExpandoEnabled);
             if (expandoZones == null) { return; }
