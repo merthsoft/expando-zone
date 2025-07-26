@@ -32,7 +32,5 @@ namespace Merthsoft.ExpandoZone.Zone
 
             Scribe_Values.Look(ref ExpandoEnabled, nameof(ExpandoEnabled), true);
         }
-
-
     }
 }

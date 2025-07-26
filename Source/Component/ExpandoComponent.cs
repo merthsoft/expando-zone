@@ -22,9 +22,8 @@ namespace Merthsoft.ExpandoZone.Component
             Map map = Find.CurrentMap;
             if (map?.zoneManager?.AllZones == null) { return; }
 
-            var expandoZones = map.zoneManager.AllZones?.OfType<ExpandoStockPile>()?.Where(z => z.ExpandoEnabled);
-            if (expandoZones == null) { return; }
-
+            var expandoZones = map.zoneManager.AllZones.OfType<ExpandoStockPile>()?.Where(z => z.ExpandoEnabled);
+            
             foreach (var zone in expandoZones) {
                 var room = zone.Cells.First().GetRoom(map);
                 if (room == null || room.IsHuge) { continue; }
