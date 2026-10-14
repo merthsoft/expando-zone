@@ -5,6 +5,8 @@ using Verse;
 namespace Merthsoft.ExpandoZone.Designator
 {
     public class AddExpandoZone : Designator_ZoneAddStockpile {
+        protected override string NewZoneLabel => "Expando zone";
+
         public AddExpandoZone() {
             preset = StorageSettingsPreset.DefaultStockpile;
             defaultLabel = "Expando Zone";
