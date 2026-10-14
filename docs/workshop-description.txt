@@ -1,0 +1,22 @@
+Expando Zone adds a separate stockpile tool that automatically expands to fill the available space in a room.
+
+[h2]How to use[/h2]
+[list]
+[*]Open Architect > Zone > Expando Zone.
+[*]Place a small seed zone, such as a single cell, inside the room you want to use for storage.
+[*]Unpause and let the game run briefly. Auto-Expand is on by default; the zone fills eligible empty cells in the room on its next periodic update.
+[*]Select the zone to change its storage settings or toggle Auto-Expand.
+[/list]
+
+Existing normal stockpiles are unaffected: automatic expansion skips cells already occupied by another zone. You can keep normal stockpiles and an Expando Zone in the same room.
+
+[h2]Manual shapes[/h2]
+Pause, create or select an Expando Zone, and turn Auto-Expand off before resuming. Add or remove cells with the usual zone tools to keep a manually chosen shape. Switching Auto-Expand off leaves existing cells in place. Switch it back on when you want automatic room fill again.
+
+[h2]Good to know[/h2]
+Expansion runs periodically on the currently viewed map while the game is running. Place the seed wholly inside the intended room. Huge rooms are skipped, so open outdoor areas may not fill. Fogged cells and objects that cannot overlap zones are skipped. Expansion adds cells; it does not automatically shrink the zone.
+
+Idea by irunonhellfire.
+
+If you like my work consider buying me a coffee: https://ko-fi.com/merthsoft
+Source: https://github.com/merthsoft/expando-zone
