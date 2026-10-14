@@ -19,10 +19,10 @@ Pause the game, create or select an Expando Zone, and turn **Auto-Expand** off b
 
 Expansion is periodic and requires the game to be running. The mod checks the currently viewed map and uses the room containing the zone's first cell. Place the seed wholly inside the intended room. Rooms classified by the game as huge are skipped, so do not rely on automatic filling of open outdoor spaces. Expansion adds cells; it does not automatically shrink the zone.
 
-## Gameplay image pending
+## Gameplay example
 
-A real in-game screenshot will be added after coordinator testing. Suggested capture: a small enclosed room with a selected Expando Zone filling the available floor, a separate normal stockpile preserved in one corner, the **Auto-Expand** toggle visible, and **Architect > Zone** open with the **Expando Zone** tool identifiable. If the UI cannot show all of this clearly in one shot, use a before/after pair showing the one-cell seed and filled result.
+![An Expando Zone fills a room while preserving a normal stockpile in the lower-left corner. The Auto-Expand toggle is enabled.](docs/images/expando-zone-gameplay.png)
 
-Suggested caption: “Choose Architect > Zone > Expando Zone, place a small seed, and unpause to fill the room. Existing stockpiles stay in place; switch Auto-Expand off for a manual shape.”
+The selected Expando Zone occupies 48 cells of the 7×7 interior; the existing normal stockpile retains its one cell. The checked **Auto-Expand** toggle appears at the right of the selected zone commands. This screenshot comes from a disposable RimWorld 1.7 test colony.
 
-See [the proposed Workshop description](docs/workshop-description.txt) for publication-ready text. Publication and the gameplay image are pending coordinator review.
+See [the proposed Workshop description](docs/workshop-description.txt). The instructions and automatic/manual expansion behavior were verified in-game; the Workshop text has not been published.
