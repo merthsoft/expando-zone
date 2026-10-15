@@ -1,5 +1,14 @@
 # Expando Zone
 
+<!-- merthsoft-download -->
+## Download
+
+[Download expando-zone.zip](https://merthsoft.com/RimWorld/expando-zone.zip) — RimWorld 1.7 release.
+
+The archive includes older supported version folders where available. Extract the mod folder into RimWorld's `Mods` directory.
+<!-- /merthsoft-download -->
+
+
 Expando Zone adds a separate stockpile tool that automatically fills the available space in a room.
 
 ## Use the Expando Zone tool
