@@ -32,6 +32,4 @@ Expansion is periodic and requires the game to be running. The mod checks the cu
 
 ![An Expando Zone fills a room while preserving a normal stockpile in the lower-left corner. The Auto-Expand toggle is enabled.](docs/images/expando-zone-gameplay.png)
 
-The selected Expando Zone occupies 48 cells of the 7×7 interior; the existing normal stockpile retains its one cell. The checked **Auto-Expand** toggle appears at the right of the selected zone commands. This screenshot comes from a disposable RimWorld 1.7 test colony.
-
-See [the proposed Workshop description](docs/workshop-description.txt). The instructions and automatic/manual expansion behavior were verified in-game; the Workshop text has not been published.
+The selected Expando Zone occupies 48 cells of the 7×7 interior; the existing normal stockpile retains its one cell. The checked **Auto-Expand** toggle appears at the right of the selected zone commands. 
